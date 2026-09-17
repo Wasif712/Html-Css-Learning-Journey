@@ -1,11 +1,61 @@
 <!DOCTYPE html>
+<!-- DOCTYPE is a declaration that tells the browser which HTML document standard/mode should be used to
+interpret the document. -->
+
+
 <html lang="en">
+<!-- <html> Ye document ka root element hai.Iske andar normally head aur body hote hain. -->
+<!-- Professional HTML mein: <html lang="en"> //lang document ki primary language indicate karta hai.Agar page Urdu mein ho: <html lang="ur">  //Accessibility aur language processing ke liye useful hai. -->
+
+
 <head>
+    <!-- Head mein page ki metadata/configuration/resources hoti hain.Important: Head ka content normally directly page ke visible body content ke پر طور display nahi hota. -->
+
     <meta charset="UTF-8">
+    <!-- Character encoding define karta hai.UTF-8 ki wajah se page different languages aur symbols ko properly represent kar sakta hai.For example: English, Urdu, Arabic, Chinese, Emoji -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Responsive websites ke liye extremely important.Basic meaning: Browser ko mobile viewport ko appropriately use karne ka instruction deta hai. -->
+
+    <tittle>My Website</tittle>
+    <!-- Browser tab ka title provide karta hai. Ye SEO/accessibility/user experience ke perspective se important hai.-->
+
 </head>
+
 <body>
-    
+    <!-- Body mein actual page content hota hai.Jo website ka main visible content hai, generally body mein hota hai. -->
+
+    <h1>Hello World</h1>
+    <!-- Heading Element -->
+     
+    <p>
+        I am learning professional frontend development.
+    </p>
+
 </body>
+
 </html>
+
+
+<!-- 
+<!DOCTYPE html>
+↓
+Document standard
+<html>
+↓
+Root
+│
+├── <head>
+│ │
+│ ├── metadata
+│ ├── title
+│ └── resources
+│
+└── <body>
+│
+├── headings
+├── paragraphs
+├── images
+├── links
+├── forms
+└── application content 
+-->
