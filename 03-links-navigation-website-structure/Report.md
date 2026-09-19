@@ -38,6 +38,14 @@ Q7:  Anchor Links (Page Sections)
 Example: <h2 id="skills">Skills</h2>
 Link: <a href="#skills">Go to Skills</a>
 
+Q8:  New Tab Open Karna
+_blank : New Tab
+
+Q9: Relative Paths
+Same folder: href="about.html"
+Subfolder: href="pages/about.html"
+One folder back: href="../index.html"
+
 
 
 
