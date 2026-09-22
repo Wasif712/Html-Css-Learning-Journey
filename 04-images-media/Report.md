@@ -54,10 +54,44 @@ Professional website mein captions important ho sakte hain.HTML <track> use kar 
 <track kind="captions" src="captions-en.vtt" srclang="en" label="English">
 </video> Ye accessibility ka important concept hai.
 
+1. poster Video play hone se pehle preview image:
+<video controls poster="images/restaurant.jpg">
+Useful for professional video sections.
+
+
 Q8: <iframe>
 iframe kisi external resource/page ko current page ke andar embed karne ke liye use hota hai. Example:
 <iframe src="https://example.com" title="Example website" width="800" height="500"></iframe>
 Lekin arbitrary websites iframe embedding block kar sakti hain.
+
+1. alt vs title
+Important exam concept.
+alt — Image ka alternative text.
+<img src="car.jpg" alt="Red sports car">
+title — Additional advisory information/tooltip-type information.
+<img src="car.jpg" alt="Red sports car" title="Our latest sports car">
+Accessibility ke liye alt ko title ka replacement mat samjho.
+
+Q9:  src
+src ka matlab: Image file/resource kahan located hai?
+Example: <img src="burger.jpg" alt="Chicken burger">
+
+Q10: alt
+alt = alternative text.
+<img src="biryani.jpg" alt="Plate of chicken biryani">
+Agar image load na ho: Plate of chicken biryani type ka alternative text available ho sakta hai.It is especially important for accessibility.
+
+Q11: Decorative Images
+Empty alt screen reader ko signal karta hai ke image ko ignore kiya ja sakta hai.
+⚠ alt attribute ko completely remove kar dena aur alt="" same cheez nahi hain.
+
+Q12: Width & Height
+Image dimensions specify kar sakte ho:
+<img src="images/pizza.jpg" alt="Fresh pizza" width="600" height="400">
+Important concept: HTML mein dimensions dena browser ko layout calculate karne mein help kar sakta hai.
+
+Q13: production website mein images ko optimize karna important hai.
+
 
 
 (^ - ^)
