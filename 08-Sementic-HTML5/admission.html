@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/register" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <p>
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="fullName"
+                placeholder="Enter your full name" required
+                minlength="3" maxlength="50">
+        </p>
+
+        <p>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                placeholder="example@email.com" required>
+        </p>
+
+        <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                placeholder="+92 300 1234567" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dateOfBirth" required>
+        </p>
+
+        <p>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age"
+                min="16" max="60" required>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Gender</legend>
+
+        <p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+        </p>
+
+        <p>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Academic Information</legend>
+
+        <p>
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="software-engineering">Software Engineering</option>
+                <option value="computer-science">Computer Science</option>
+                <option value="information-technology">Information Technology</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester" required>
+                <option value="" disabled selected>Select Semester</option>
+                <option value="1">Semester 1</option>
+                <option value="2">Semester 2</option>
+                <option value="3">Semester 3</option>
+                <option value="4">Semester 4</option>
+            </select>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Technical Skills</legend>
+
+        <p>
+            <input type="checkbox" id="html" name="skills" value="html">
+            <label for="html">HTML</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="css" name="skills" value="css">
+            <label for="css">CSS</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="javascript" name="skills" value="javascript">
+            <label for="javascript">JavaScript</label>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Address Information</legend>
+
+        <p>
+            <label for="address">Complete Address</label>
+            <br>
+            <textarea id="address" name="address" rows="5" cols="40"
+                placeholder="Enter your complete address" required></textarea>
+        </p>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Terms & Conditions</legend>
+
+        <p>
+            <input type="checkbox" id="terms" name="terms" value="accepted" required>
+            <label for="terms">I confirm that the information provided is correct.</label>
+        </p>
+    </fieldset>
+
+
+    <p>
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+    </p>
+
+</form>
+</body>
+</html>

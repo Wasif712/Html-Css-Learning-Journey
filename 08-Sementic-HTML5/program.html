@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Taste Restaurant</title>
+</head>
+
+<body>
+    <header>
+        <h1>Royal Taste Restaurant</h1>
+        <p>
+            Traditional food with a modern experience.
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>Our Restaurant</h2>
+            <figure>
+                <img src="images/restaurant.jpg" alt="Interior of Royal Taste Restaurant" width="800" height="500">
+                <figcaption>
+                    Welcome to Royal Taste Restaurant.
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Our Special Dishes</h2>
+            <figure>
+                <img src="images/biryani.jpg" alt="Traditional chicken biryani" loading="lazy">
+                <figcaption>
+                    Traditional Chicken Biryani
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/pizza.jpg" alt="Fresh cheese pizza" loading="lazy">
+                <figcaption>
+                    Special Cheese Pizza
+                </figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Restaurant Music</h2>
+            <audio controls>
+                <source src="audio/restaurant.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+        <section>
+            <h2>Restaurant Tour</h2>
+            <video controls width="800" poster="images/video-poster.jpg">
+                <source src="videos/restaurant-tour.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+        <section>
+            <h2>Find Us</h2>
+            <iframe src="MAP_EMBED_URL" title="Royal Taste Restaurant location" width="600" height="450" loading="lazy">
+            </iframe>
+        </section>
+    </main>
+    <footer>
+        <p>
+            © 2026 Royal Taste Restaurant
+        </p>
+    </footer>
+
+<!-- HTML Media Mental Model
+yeh structure yaad rakho:
+IMAGE
+│
+└── <img>
+IMAGE + CAPTION
+│
+└── <figure>
+├── <img>
+└── <figcaption>
+AUDIO
+│
+└── <audio>
+└── <source>
+VIDEO
+│
+└── <video>
+├── <source>
+└── <track>
+EXTERNAL EMBED
+│
+└── <iframe> -->
+</body>
+
+</html>
