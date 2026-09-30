@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <!-- aria-label navigation ko identify karne mein assistive technology ki help karta hai. -->
+        <nav aria-label="Student portal navigation">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="results.html">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Accessible Images -->
+            <!-- Important: alt image ka purpose/meaning explain kare. -->
+            <img src="student.jpg" alt="Student profile photograph">
+
+            <!-- Why? button already keyboard behavior, semantics aur interaction model provide karta hai -->
+            <button type="submit">Submit</button>
+        </section>
+
+        <section>
+            <table>
+                <caption>Student Course Results</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Credit Hours</th>
+                        <th scope="col">Grade</th>
+                        <th scope="col">Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Web Engineering</th>
+                        <td>3</td>
+                        <td>A</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Database Systems</th>
+                        <td>3</td>
+                        <td>A-</td>
+                        <td>81</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </main>
 </body>
+
 </html>
