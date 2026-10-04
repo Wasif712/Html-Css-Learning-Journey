@@ -1,0 +1,106 @@
+/* Universal Selector  --  * ka matlab: All elements. */
+/* Ye sab elements par apply ho sakta hai. Lekin global styles carefully use karni hoti hain. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ /* CSS Variables — Introduction */
+/* Modern CSS mein custom properties bohat important hain. */
+:root {
+--primary-color: #2563eb;
+--text-color: #111827;
+--surface-color: #ffffff;
+}
+
+body {
+color: var(--text-color);
+}
+
+.button {
+background-color: var(--primary-color);
+}
+Ye future advanced CSS architecture ka foundation hai
+
+/* Element Selector */
+/* Ye all <h1> elements select karega. */
+h1 {
+  color: navy;
+}
+
+/* Class Selector = .class-name */
+.hero {
+  padding: 80px;
+  background-color: black;
+}
+
+/* ID Selector = #id-name */
+#main-content {
+  max-width: 1200px;
+  background-color: lightyellow;
+}
+
+/* Grouping Selectors = Agar same styling multiple elements ko deni ho: */
+h1,
+h2,
+h3 {
+  font-family: sans-serif;
+  color: darkred;
+}
+
+
+/* Descendant Selector */
+.main-nav a {
+text-decoration: none;
+}
+/* Meaning: .main-nav ke andar mojood <a> elements. */
+
+/* Child Selector */
+.main-nav > a {
+color: blue;
+}
+/* > ka matlab: Direct child. */
+/* Difference: .main-nav a  // means any descendant. */
+/* While: .main-nav > a  // means direct child. */
+
+/* Attribute Selector */
+input[type="email"] {
+border: 1px solid black;
+}
+input[required] {
+background-color: #f5f5f5;
+}
+/* Ye real forms mein bohat useful hota hai */
+
+/* CSS Cascade : Ab CSS ka most important concept */
+p {
+color: red;
+}
+p {
+color: blue;
+}
+/* Same specificity. Later rule wins: blue */
+
+/* Specificity */
+p {
+color: red;
+}
+.text {
+color: blue;
+}
+#special {
+color: green;
+}
+
+/* !important */
+/* Ye normal cascade ko override kar sakta hai. Lekin: Do not use !important as your normal styling strategy. */
+p {
+color: purple !important;
+}
+
+/* Inheritance */
+body {
+color: #222;
+}
