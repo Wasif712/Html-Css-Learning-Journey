@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: left;
+  text-align: center;
+  text-align: right;
+  text-align: justify;
+  a {
+    text-decoration: none;
+  }
+  a {
+    text-decoration: underline;
+  }
+  text-decoration: underline dotted;
+  /* Accessibility ke perspective se links ko visually distinguish karna important hai. */
+  text-transform: uppercase; /* GET STARTED */
+  text-transform: lowercase;
+  text-transform: capitalize;
+  font-style: italic; /* quotes, emphasis, special text */
+}
