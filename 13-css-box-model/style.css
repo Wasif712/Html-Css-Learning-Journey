@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0; /*margin aur padding ko 0 kar diya gaya hai, pory page par */
+  box-sizing: border-box; /*Padding and border width ke andar calculate hote hain */
+}
+
+h1 {
+  width: 500px; /*fixed Width*/
+  max-width: 1200px; /* 1200px sy ziada wide nahi hoga element. */
+  min-width: 300px; /* 300px sy ziada chota nahi hoga element. */
+  height: 100px; /*fixed height : Lekin fixed heights carefully use karo.*/
+  padding: 25px; /*padding ka size hoga element k andar. */
+  margin: 20px auto; /*auto sy center align hoga element. */
+  border: 5px solid black; /*border-width, border-style, border-color*/
+  background-color: #004741; /* background ka color hoga */
+  color: white; /* text ka color white hoga */
+  text-align: center; /* text ko center align karega box m */
+  border-radius: 15px; /* border ko rounded karega */
+  box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.08); /* box shadow ka size hoga, aur color hoga black with 8% opacity */
+}
+
+.feature-card {
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.06);
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: lightyellow ;
+}
